@@ -1,33 +1,103 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>issunnedev</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Background Particles -->
-  <div id="particles-js"></div>
-
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <div class="logo">
-      <div class="logo-box">▣</div>
-      <h2>My Site</h2>
-    </div>
-
+  <header>
+    <h1>issunnedev</h1>
     <nav>
-      <a href="#" class="nav-item active">🏠 Home</a>
-      <a href="#" class="nav-item">ℹ️ About</a>
-      <a href="#" class="nav-item">📄 Blog</a>
-      <a href="#" class="nav-item">✉️ Contact</a>
+      <a href="#projects">projects</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
     </nav>
-  </div>
+  </header>
 
-  <!-- Particles Library -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
+  <main>
+    <section id="hero">
+      <h2>i make games and weird stuff</h2>
+      <p>check out my projects below</p>
+    </section>
 
+    <section id="projects">
+      <h2>projects</h2>
+      <div class="project">
+        <h3>issunne</h3>
+        <p>a rapidly changing game with shifting mechanics and maps</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>about</h2>
+      <p>im a developer focused on experimental gameplay and unique systems</p>
+    </section>
+
+    <section id="contact">
+      <h2>contact</h2>
+      <p>github: <a href="https://github.com/yourusername">yourusername</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 issunnedev</p>
+  </footer>
 </body>
 </html>
+
+
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+}
+
+
+// script.js
+console.log("issunnedev loaded");
+
